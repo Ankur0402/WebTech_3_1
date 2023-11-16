@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+    <style>
+        .div1{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .tab1{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: azure;
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .tab1 tr{
+            border:1px solid black;
+        }
+        .tab1 th{
+            border:1px solid black;
+            background-color: rgb(230, 230, 230);
+            padding: 5px;
+        }
+        .tab1 td{
+            border:1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="margin-top: 50px;">Time Table</h1>
+    <div class="div1">
+        <table class="tab1">
+            <tr>
+                <th>DAY/TIME</th>
+                <th>9:30 - 10:20</th>
+                <th>10:20 - 11:10</th>
+                <th>11:10 - 11:25</th>
+                <th>11:25 - 12:15</th>
+                <th>12:15 - 1:05</th>
+                <th>1:05 - 1:50</th>
+                <th>1:50 - 2:40</th>
+                <th>2:40 - 3:30</th>
+                <th>3:30 - 4:20</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td colspan="2">DLVS</td>
+                <td rowspan="6">Break</td>
+                <td colspan="2">WT</td>
+                <td rowspan="6">Lunch</td>
+                <td>PP</td>
+                <td colspan="2">DLVS Lab</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>DLVS</td>
+                <td>SE</td>
+                <td>WT</td>
+                <td>PP</td>
+                <td colspan="2">DAA</td>
+                <td>AI</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>PP</td>
+                <td>WT</td>
+                <td colspan="2">SE</td>
+                <td colspan="2">DAA</td>
+                <td>DLVS</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td colspan="2">DLVS</td>
+                <td colspan="2">WT Lab</td>
+                <td colspan="2">DAA</td>
+                <td>SE</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>PP</td>
+                <td>SE</td>
+                <td colspan="2">SE Lab</td>
+                <td colspan="2">DAA</td>
+                <td>WT</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>PP</td>
+                <td>WT</td>
+                <td>SE</td>
+                <td>Mentoring</td>
+                <td colspan="2">DAA</td>
+                <td>AI</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
