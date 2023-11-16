@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamicTable</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        function getID(){
+            var name=document.getElementById("name").value
+            var roll=document.getElementById("roll").value
+            var m1=document.getElementById("m1").value
+            var m2=document.getElementById("m2").value
+            var m3=document.getElementById("m3").value
+            var totmarks=parseInt(m1)+parseInt(m2)+parseInt(m3)
+
+            var table=document.getElementById("dyntab")
+            var newrow=table.insertRow(table.rows.length)
+
+            var namecell=newrow.insertCell(0)
+            var rollcell=newrow.insertCell(1)
+            var markcell=newrow.insertCell(2)
+
+            namecell.innerHTML=name
+            rollcell.innerHTML=roll
+            markcell.innerHTML=totmarks
+
+            document.getElementById('name').value=""
+            document.getElementById('roll').value=""
+            document.getElementById('m1').value=""
+            document.getElementById('m2').value=""
+            document.getElementById('m3').value=""
+        }
+    </script>
+</head>
+<body>
+    <div id="frms" class="container">
+        <h2>Form</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter name">
+            <br>
+            <label for="roll">Roll Number</label>
+            <input type="text" id="roll" name="roll" placeholder="Enter roll number">
+            <br>
+            <label for="m1">Marks 1</label>
+            <input type="number" id="m1" name="m1" placeholder="Enter marks">
+            <br>
+            <label for="m2">Marks 2</label>
+            <input type="number" id="m2" name="m2" placeholder="Enter marks">
+            <br>
+            <label for="m3">Marks 3</label>
+            <input type="number" id="m3" name="m3" placeholder="Enter marks">
+            <br>
+            <input type="button" value="Submit" onclick="getID()"></input>
+        </form>
+    </div>
+    <div id="tab" class="container">
+        <h2>Table</h2>
+        <table id="dyntab" class="table-responsive" style="margin: auto;">
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Total Marks</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
